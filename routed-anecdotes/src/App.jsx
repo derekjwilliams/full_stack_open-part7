@@ -1,24 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-
-const Menu = () => {
-  const padding = {
-    paddingRight: 5,
-  }
-  return (
-    <div>
-      <a href='#' style={padding}>
-        anecdotes
-      </a>
-      <a href='#' style={padding}>
-        create new
-      </a>
-      <a href='#' style={padding}>
-        about
-      </a>
-    </div>
-  )
-}
 
 const Anecdote = ({ anecdotes }) => {
   const id = useParams().id
@@ -61,6 +42,20 @@ const About = () => (
   </div>
 )
 
+const Notification = (props) => {
+  const style = {
+    border: '3px solid #333',
+    backgroundColor: '#eee',
+    padding: 10,
+    marginBottom: 5,
+  }
+  return (
+    props.notification && (
+      <div style={style}>{props.notification}</div>
+    )
+  )
+}
+
 const Footer = () => (
   <div>
     Anecdote app for <a href='https://fullstackopen.com/'>Full Stack Open</a>.
@@ -76,7 +71,7 @@ const CreateNew = (props) => {
   const [content, setContent] = useState('')
   const [author, setAuthor] = useState('')
   const [info, setInfo] = useState('')
-
+  const navigate = useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault()
     props.addNew({
@@ -85,6 +80,7 @@ const CreateNew = (props) => {
       info,
       votes: 0,
     })
+    navigate('/')
   }
 
   return (
@@ -144,6 +140,10 @@ const App = () => {
   const addNew = (anecdote) => {
     anecdote.id = Math.round(Math.random() * 10000)
     setAnecdotes(anecdotes.concat(anecdote))
+    setNotification(`Created New Anecdote: ${anecdote.content}`)
+    setTimeout(() => {
+      setNotification('')
+    }, 5000)
   }
 
   const anecdoteById = (id) => anecdotes.find((a) => a.id === id)
@@ -161,10 +161,12 @@ const App = () => {
   const padding = {
     padding: 5,
   }
+
   return (
     <Router>
       <div>
         <h1>Software anecdotes</h1>
+        <Notification notification={notification} />
         <div>
           <Link style={padding} to='/'>
             anecdotes
