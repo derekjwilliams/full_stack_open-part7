@@ -1,12 +1,17 @@
-import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useParams,
+  useNavigate,
+} from 'react-router-dom'
 import { useState } from 'react'
 
 const Anecdote = ({ anecdotes }) => {
   const id = useParams().id
-  const anecdote = anecdotes.find(n => n.id === Number(id)) 
-  return(
-    <li>{anecdote.content}</li>
-  )
+  const anecdote = anecdotes.find((n) => n.id === Number(id))
+  return <li>{anecdote.content}</li>
 }
 
 const AnecdoteList = ({ anecdotes }) => (
@@ -49,11 +54,7 @@ const Notification = (props) => {
     padding: 10,
     marginBottom: 5,
   }
-  return (
-    props.notification && (
-      <div style={style}>{props.notification}</div>
-    )
-  )
+  return props.notification && <div style={style}>{props.notification}</div>
 }
 
 const Footer = () => (
@@ -67,17 +68,34 @@ const Footer = () => (
   </div>
 )
 
+const useField = (type) => {
+  const [value, setValue] = useState('')
+
+  const onChange = (event) => {
+    setValue(event.target.value)
+  }
+
+  return {
+    type,
+    value,
+    onChange,
+  }
+}
+
 const CreateNew = (props) => {
-  const [content, setContent] = useState('')
-  const [author, setAuthor] = useState('')
-  const [info, setInfo] = useState('')
+  const content = useField('content')
+  const author = useField('author')
+  const info = useField('info')
+
   const navigate = useNavigate()
+
+  console.log(JSON.stringify(content))
   const handleSubmit = (e) => {
     e.preventDefault()
     props.addNew({
-      content,
-      author,
-      info,
+      content: content.value,
+      author: author.value,
+      info: info.value,
       votes: 0,
     })
     navigate('/')
@@ -89,27 +107,15 @@ const CreateNew = (props) => {
       <form onSubmit={handleSubmit}>
         <div>
           content
-          <input
-            name='content'
-            value={content}
-            onChange={(e) => setContent(e.target.value)}
-          />
+          <input {...content} />
         </div>
         <div>
           author
-          <input
-            name='author'
-            value={author}
-            onChange={(e) => setAuthor(e.target.value)}
-          />
+          <input {...author} />
         </div>
         <div>
           url for more info
-          <input
-            name='info'
-            value={info}
-            onChange={(e) => setInfo(e.target.value)}
-          />
+          <input {...info} />
         </div>
         <button>create</button>
       </form>
@@ -179,7 +185,10 @@ const App = () => {
           </Link>
         </div>
         <Routes>
-          <Route path="/anecdotes/:id" element={<Anecdote anecdotes={anecdotes} />} />
+          <Route
+            path='/anecdotes/:id'
+            element={<Anecdote anecdotes={anecdotes} />}
+          />
           <Route
             path='/'
             element={<AnecdoteList anecdotes={anecdotes} />}
