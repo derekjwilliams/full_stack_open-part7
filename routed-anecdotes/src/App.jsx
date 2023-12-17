@@ -75,10 +75,15 @@ const useField = (type) => {
     setValue(event.target.value)
   }
 
+  const onReset = () => {
+    setValue('')
+  }
+
   return {
     type,
     value,
     onChange,
+    onReset,
   }
 }
 
@@ -89,7 +94,14 @@ const CreateNew = (props) => {
 
   const navigate = useNavigate()
 
-  console.log(JSON.stringify(content))
+
+  const handleReset = (e) => {
+    console.log(JSON.stringify(content))
+    e.preventDefault()
+    content.value = ''
+    author.value = ''
+    info.value = ''
+  }
   const handleSubmit = (e) => {
     e.preventDefault()
     props.addNew({
@@ -118,6 +130,7 @@ const CreateNew = (props) => {
           <input {...info} />
         </div>
         <button>create</button>
+        <button onClick={handleReset}>reset</button>
       </form>
     </div>
   )
