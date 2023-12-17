@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom'
 import { useState } from 'react'
 
 const Menu = () => {
@@ -17,6 +17,14 @@ const Menu = () => {
         about
       </a>
     </div>
+  )
+}
+
+const Anecdote = ({ anecdotes }) => {
+  const id = useParams().id
+  const anecdote = anecdotes.find(n => n.id === Number(id)) 
+  return(
+    <li>{anecdote.content}</li>
   )
 }
 
@@ -169,6 +177,7 @@ const App = () => {
           </Link>
         </div>
         <Routes>
+          <Route path="/anecdotes/:id" element={<Anecdote anecdotes={anecdotes} />} />
           <Route
             path='/'
             element={<AnecdoteList anecdotes={anecdotes} />}
