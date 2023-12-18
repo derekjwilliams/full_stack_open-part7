@@ -37,7 +37,7 @@ const useResource = (baseUrl, token) => {
       }
     };
     fetchData();
-  }, [baseUrl]);
+  }, []);
 
   return [
     values,
@@ -56,7 +56,7 @@ const App = () => {
   const handleNoteSubmit = async (event) => {
     event.preventDefault()
     const newNote = await noteService.create({ content: content.value })
-    notes.concat(newNote)
+    notes = notes.concat(newNote)
     content.value = ''
   }
  
