@@ -1,0 +1,4 @@
+GET http://localhost:3001/apiuuu/blogs
+Authorization: Bearer xxx
+
+#replace token with valid token

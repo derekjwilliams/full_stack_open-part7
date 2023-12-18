@@ -1,0 +1,5 @@
+DELETE http://localhost:3001/api/blogs/6568861f438da0065510cc4f
+Authorization: Bearer xxx
+
+# Replace id above with an existing id from your database, and replace token with valid token
+# Should get a 204 response

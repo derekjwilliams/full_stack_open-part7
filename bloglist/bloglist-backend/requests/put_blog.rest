@@ -1,0 +1,11 @@
+PUT http://localhost:3001/api/blogs/6562054414d540132d0ad2a8
+Authorization: Bearer xxx
+
+{
+  "title": "random",
+  "author": "Hasura Team",
+  "url": "aaaaa",
+  "likes": 3
+}
+
+#replace token with valid token

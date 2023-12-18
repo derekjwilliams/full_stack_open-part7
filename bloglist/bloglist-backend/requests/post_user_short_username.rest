@@ -1,0 +1,11 @@
+POST http://localhost:3001/api/users
+content-type: application/json
+Authorization: Bearer xxx
+
+{
+    "username": "p",
+    "password": "rvEXIooysJW8joo2RNEOm8G3",
+    "name": "Paul McCartney"
+}
+
+#replace token with valid token

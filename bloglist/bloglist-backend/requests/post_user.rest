@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/users
+content-type: application/json
+Authorization: Bearer xxx
+
+{
+    "username": "John",
+    "password": "abbeyroad",
+    "name": "John Lennon"
+}
+
+#replace token with valid token
+# ringo password: RSsudAY8XWF8sJol20t2rjyT
