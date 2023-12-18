@@ -75,7 +75,7 @@ const useField = (type) => {
     setValue(event.target.value)
   }
 
-  const onReset = () => {
+  const reset = () => {
     setValue('')
   }
 
@@ -83,7 +83,7 @@ const useField = (type) => {
     type,
     value,
     onChange,
-    onReset,
+    reset,
   }
 }
 
@@ -94,13 +94,12 @@ const CreateNew = (props) => {
 
   const navigate = useNavigate()
 
-
   const handleReset = (e) => {
     console.log(JSON.stringify(content))
     e.preventDefault()
-    content.value = ''
-    author.value = ''
-    info.value = ''
+    content.reset()
+    author.reset()
+    info.reset()
   }
   const handleSubmit = (e) => {
     e.preventDefault()
