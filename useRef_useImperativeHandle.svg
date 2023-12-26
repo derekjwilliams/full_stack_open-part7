@@ -1,0 +1,843 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="400mm"
+   height="700mm"
+   viewBox="0 0 400 700"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="useRef_useImperativeHandle.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.4204826"
+     inkscape:cx="195.01401"
+     inkscape:cy="990.52849"
+     inkscape:window-width="1671"
+     inkscape:window-height="1387"
+     inkscape:window-x="889"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker15399"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path15397" />
+    </marker>
+    <rect
+       x="97.507004"
+       y="137.93674"
+       width="478.02216"
+       height="54.699055"
+       id="rect290" />
+    <marker
+       style="overflow:visible"
+       id="marker1833-8"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1831-4" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1833-8-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1831-4-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1833-8-1-9"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1831-4-2-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1833-8-1-9-1"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1831-4-2-5-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1833-8-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="TriangleStart"
+       markerWidth="5.3244081"
+       markerHeight="6.155385"
+       viewBox="0 0 5.3244081 6.1553851"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         transform="scale(0.5)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 5.77,0 -2.88,5 V -5 Z"
+         id="path1831-4-9" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffeeaa;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-miterlimit:2;paint-order:markers stroke fill"
+       id="rect234-4-8"
+       width="275.65057"
+       height="492.91257"
+       x="49.890259"
+       y="100.77284" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.18402px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="58.417526"
+       y="134.77837"
+       id="text296-1-4"
+       transform="scale(0.99813599,1.0018675)"><tspan
+         sodipodi:role="line"
+         id="tspan294-3-0"
+         style="font-size:5.18402px;stroke-width:0.264583"
+         x="58.417526"
+         y="134.77837">App.js</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,33.349576,83.688559)"
+       id="text288"
+       style="font-size:13.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect290);display:inline" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="160.70062"
+       y="188.55894"
+       id="text296-1"
+       transform="scale(0.99813599,1.0018675)"><tspan
+         sodipodi:role="line"
+         id="tspan294-3"
+         style="font-size:11.2889px;stroke-width:0.264583"
+         x="160.70062"
+         y="188.55894">useRef</tspan></text>
+    <rect
+       style="fill:#ffccaa;stroke:#333333;stroke-width:1.99999;stroke-linecap:round;stroke-miterlimit:2;paint-order:markers stroke fill"
+       id="rect348-7"
+       width="213.72946"
+       height="303.59763"
+       x="66.433426"
+       y="284.34216" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.18402px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="69.850517"
+       y="293.58121"
+       id="text296-1-3-5"
+       transform="scale(0.99813599,1.0018675)"><tspan
+         sodipodi:role="line"
+         id="tspan294-3-8-3"
+         style="font-size:5.18402px;stroke-width:0.264583"
+         x="69.850517"
+         y="293.58121">Togglable</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="124.24227"
+       y="351.2991"
+       id="text404-8"
+       transform="scale(0.99813599,1.0018675)"><tspan
+         sodipodi:role="line"
+         id="tspan402-8"
+         style="font-size:11.2889px;stroke-width:0.264583"
+         x="124.24227"
+         y="351.2991">useImperativeHandle</tspan></text>
+    <rect
+       style="fill:#c8beb7;stroke:#333333;stroke-width:2;stroke-linecap:round;stroke-miterlimit:2;paint-order:markers stroke fill"
+       id="rect561"
+       width="142.42944"
+       height="115.46504"
+       x="70.198578"
+       y="464.37711" />
+    <text
+       xml:space="preserve"
+       style="font-size:5.18402px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="73.862625"
+       y="469.85074"
+       id="text296-1-3"
+       transform="scale(0.99813599,1.0018675)"><tspan
+         sodipodi:role="line"
+         id="tspan294-3-8"
+         style="font-size:5.18402px;stroke-width:0.264583"
+         x="73.862625"
+         y="469.85074">NoteForm</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+       x="75.193855"
+       y="477.90573"
+       id="text676"><tspan
+         sodipodi:role="line"
+         id="tspan674"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="477.90573">const NoteForm = ({ createNote }) =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="482.31543"
+         id="tspan680">  const [newNote, setNewNote] = useState('')</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="486.72516"
+         id="tspan684">  const addNote = (event) =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="491.13486"
+         id="tspan686">    event.preventDefault()</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="495.54459"
+         id="tspan688">    createNote({</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="499.95428"
+         id="tspan690">      content: newNote,</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="504.36401"
+         id="tspan692">      important: true</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="508.77371"
+         id="tspan694">    })</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="513.18341"
+         id="tspan698">    setNewNote('')</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="517.59314"
+         id="tspan700">  }</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="522.00287"
+         id="tspan704">  return (</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="526.41254"
+         id="tspan706">    &lt;div&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="530.82227"
+         id="tspan708">      &lt;h2&gt;Create a new note&lt;/h2&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="535.23199"
+         id="tspan712">      &lt;form onSubmit={addNote}&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="539.64166"
+         id="tspan714">        &lt;input</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="544.05139"
+         id="tspan716">          value={newNote}</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="548.46112"
+         id="tspan718">          onChange={event =&gt; setNewNote(event.target.value)}</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="552.87085"
+         id="tspan720">        /&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="557.28052"
+         id="tspan722">        &lt;button type=&quot;submit&quot;&gt;save&lt;/button&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="561.69025"
+         id="tspan724">      &lt;/form&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="566.09998"
+         id="tspan726">    &lt;/div&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="570.5097"
+         id="tspan728">  )</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="574.91937"
+         id="tspan730">}</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="75.193855"
+         y="579.3291"
+         id="tspan678" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+       x="65.12606"
+       y="141.89301"
+       id="text764"><tspan
+         sodipodi:role="line"
+         id="tspan762"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="141.89301">import { useState, useEffect, useRef } from 'react</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="146.30272"
+         id="tspan2625"> </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="150.71243"
+         id="tspan2627">const App = () =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="155.12215"
+         id="tspan766">  // ...</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="159.53185"
+         id="tspan768">  const addNote = (noteObject) =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="163.94156"
+         id="tspan770">    noteService</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="168.35127"
+         id="tspan772">      .create(noteObject)</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="172.76099"
+         id="tspan774">      .then(returnedNote =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="177.1707"
+         id="tspan776">        setNotes(notes.concat(returnedNote))</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="181.58041"
+         id="tspan778">      })</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="185.99013"
+         id="tspan780">  }</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="190.39984"
+         id="tspan784">  // ...</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="194.80956"
+         id="tspan5072">  const noteFormRef = useRef()</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="199.21927"
+         id="tspan18379" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="203.62898"
+         id="tspan18381">  const addNote = (noteObject) =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="208.0387"
+         id="tspan18383">    noteFormRef.current.toggleVisibility()</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="212.44839"
+         id="tspan18385">    noteService</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="216.85811"
+         id="tspan18387">      .create(noteObject)</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="221.26782"
+         id="tspan18389">      .then(returnedNote =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="225.67754"
+         id="tspan18391">        setNotes(notes.concat(returnedNote))</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="230.08725"
+         id="tspan18393">      })</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="234.49696"
+         id="tspan18395">  }</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="238.90668"
+         id="tspan3423"></tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="243.31639"
+         id="tspan17611">  const noteForm = () =&gt; (</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="247.7261"
+         id="tspan786">    &lt;Togglable buttonLabel='new note'&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="252.13582"
+         id="tspan788">      &lt;NoteForm createNote={addNote} ref={noteFormRef} /&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="256.54553"
+         id="tspan790">    &lt;/Togglable&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="260.95523"
+         id="tspan792">  )</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="265.36496"
+         id="tspan794" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="269.77466"
+         id="tspan796">  // ...</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="65.12606"
+         y="274.18439"
+         id="tspan798">}</tspan></text>
+    <rect
+       style="fill:#afe9af;stroke:#333333;stroke-width:1;stroke-linecap:round;stroke-miterlimit:2;stroke-dasharray:none;paint-order:markers stroke fill"
+       id="rect9229"
+       width="178.07416"
+       height="118.61122"
+       x="75.823097"
+       y="315.24789" />
+    <rect
+       style="fill:#e3f4d7;stroke:#333333;stroke-width:1;stroke-linecap:round;stroke-miterlimit:2;stroke-dasharray:none;paint-order:markers stroke fill"
+       id="rect9283"
+       width="151.33157"
+       height="50.024361"
+       x="76.766953"
+       y="380.37396" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+       x="72.67691"
+       y="304.86548"
+       id="text6783"><tspan
+         sodipodi:role="line"
+         id="tspan6781"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="304.86548">import { useState, forwardRef, useImperativeHandle } from 'react'</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="309.27518"
+         id="tspan6785" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="313.68491"
+         id="tspan6787">const Togglable = forwardRef((props, refs) =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="318.0946"
+         id="tspan6789">  </tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="322.50433"
+         id="tspan6791">  const [visible, setVisible] = useState(false)</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="326.91403"
+         id="tspan6793">  const hideWhenVisible = { display: visible ? 'none' : '' }</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="331.32376"
+         id="tspan6795">  const showWhenVisible = { display: visible ? '' : 'none' }</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="335.73346"
+         id="tspan6797" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="340.14319"
+         id="tspan6799">  const toggleVisibility = () =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="344.55289"
+         id="tspan6801">    setVisible(!visible)</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="348.96262"
+         id="tspan6803">  }</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="353.37231"
+         id="tspan6805" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="357.78204"
+         id="tspan6807">  useImperativeHandle(refs, () =&gt; {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="362.19174"
+         id="tspan6809">    return {</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="366.60144"
+         id="tspan6811">      toggleVisibility</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="371.01117"
+         id="tspan6813">    }</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="375.42087"
+         id="tspan6815">  })</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="379.8306"
+         id="tspan6817" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="384.2403"
+         id="tspan6819">  return (</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="388.65002"
+         id="tspan6821">    &lt;div&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="393.05972"
+         id="tspan6823">      &lt;div style={hideWhenVisible}&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="397.46945"
+         id="tspan6825">        &lt;button onClick={toggleVisibility}&gt;{props.buttonLabel}&lt;/button&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="401.87915"
+         id="tspan6827">      &lt;/div&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="406.28888"
+         id="tspan6829">      &lt;div style={showWhenVisible}&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="410.69858"
+         id="tspan6831">        {props.children}</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="415.10831"
+         id="tspan6833">        &lt;button onClick={toggleVisibility}&gt;cancel&lt;/button&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="419.51801"
+         id="tspan6835">      &lt;/div&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="423.9277"
+         id="tspan6837">    &lt;/div&gt;</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="428.33743"
+         id="tspan6839">  )</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="432.74713"
+         id="tspan15719" /><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+         x="72.67691"
+         y="437.15686"
+         id="tspan6841">})</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="56.316738"
+       y="112.00423"
+       id="text7595"><tspan
+         sodipodi:role="line"
+         id="tspan7593"
+         style="stroke-width:0.264583"
+         x="56.316738"
+         y="112.00423">see https://github.com/fullstack-hy2020/part2-notes-frontend/tree/part5-5</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="56.316738"
+         y="116.41394"
+         id="tspan8349"> for code and </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="56.316738"
+         y="120.82365"
+         id="tspan8347">https://fullstackopen.com/en/part5/props_children_and_proptypes#references-to-components-with-ref </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="56.316738"
+         y="125.23337"
+         id="tspan8351">for description</tspan></text>
+    <path
+       style="display:none;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 115.46504,-93.127117 -140.63453,-321.22564"
+       id="path8359"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g15476"
+       transform="translate(61.350635,49.395126)">
+      <rect
+         style="fill:#80b3ff;stroke:#333333;stroke-width:1;stroke-linecap:round;stroke-miterlimit:2;stroke-dasharray:none;paint-order:markers stroke fill"
+         id="rect9341"
+         width="136.22987"
+         height="13.528601"
+         x="114.83581"
+         y="258.30191" />
+      <text
+         xml:space="preserve"
+         style="font-size:6.35px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+         x="119.64273"
+         y="266.13342"
+         id="text296-1-30"
+         transform="scale(0.99813599,1.0018675)"><tspan
+           sodipodi:role="line"
+           id="tspan294-3-1"
+           style="font-size:6.35px;stroke-width:0.264583"
+           x="119.64273"
+           y="266.13342">fowardRef wraps useImperativeHandle</tspan></text>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:4.93889px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="144.40996"
+       y="386.98096"
+       id="text9339"><tspan
+         sodipodi:role="line"
+         id="tspan9337"
+         style="font-size:4.93889px;stroke-width:0.264583"
+         x="144.40996"
+         y="386.98096">The Component  markup</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker1833-8);marker-end:url(#marker15399)"
+       d="m 127.73517,361.82173 c 18.37806,0.0573 64.39081,-3.45084 74.49011,0.43208 47.42267,18.23275 -1.18397,52.20708 -1.18397,52.20708 M 76.169601,251.01964 c -17.803083,8.21692 -18.549382,15.50988 -16.120063,42.2593 3.440676,37.88555 12.659251,168.26439 12.659251,168.26439"
+       id="path15082"
+       sodipodi:nodetypes="csccsc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker15399)"
+       d="m 260.50424,318.70869 c 0,0 -27.06849,21.6625 -54.44031,26.38178 -19.51868,4.12061 -28.27207,2.6215 -54.41753,-1.11322 -14.12897,-2.01824 -29.88899,-0.72831 -37.12521,8.08101"
+       id="path15478"
+       sodipodi:nodetypes="ccsc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1833-8-1)"
+       d="m 85.397997,196.63408 c -18.808123,3.09426 -33.370165,-1.31811 -29.425255,6.44358 1.448961,2.18506 9.177907,2.68994 14.166259,3.62422"
+       id="path18421-3"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1833-8-1-9)"
+       d="m 212.8273,230.14207 c -3.0772,5.29659 -34.31403,-7.92509 -49.56085,-9.60197 -15.22583,-2.53422 -32.35176,-2.02934 -47.18438,-9.90438"
+       id="path18421-3-3"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1833-8-1-9-1)"
+       d="m 279.23897,217.33372 c 10.4514,2.46502 17.28344,5.28889 -5.82885,19.34294 -47.00231,24.83761 -77.65685,25.97173 -92.48947,18.09669"
+       id="path18421-3-3-2"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="194.59164"
+       y="218.65994"
+       id="text20071"><tspan
+         sodipodi:role="line"
+         id="tspan20069"
+         style="stroke-width:0.264583"
+         x="194.59164"
+         y="218.65994">When a ref is passed to an element in render, </tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="194.59164"
+         y="223.06966"
+         id="tspan20073">a reference to the node becomes accessible</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="194.59164"
+         y="227.47937"
+         id="tspan20075"> at the <tspan
+   style="font-weight:bold"
+   id="tspan20077">current</tspan> attribute of the ref.</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker1833-8-6)"
+       d="m 157.13105,206.38726 c 10.76602,9.70125 106.89999,-34.12837 131.03025,-26.59138 28.8951,9.02527 41.68705,31.79523 12.10129,68.66112 -28.22098,35.16528 -184.97583,75.59763 -185.60506,84.72157"
+       id="path18421-1"
+       sodipodi:nodetypes="cssc" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="65.427269"
+       y="78.342178"
+       id="text296-1-1"
+       transform="scale(0.99813599,1.0018675)"><tspan
+         sodipodi:role="line"
+         id="tspan294-3-4"
+         style="font-size:11.2889px;stroke-width:0.264583"
+         x="65.427269"
+         y="78.342178">useRef, forwardRef, useImperativeHandle</tspan></text>
+  </g>
+</svg>
