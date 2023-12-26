@@ -1,0 +1,7 @@
+{
+  "files.exclude": {
+    "node_modules": true
+  },
+  "eslint.codeActionsOnSave.rules": null,
+  "editor.formatOnSave": true
+}
