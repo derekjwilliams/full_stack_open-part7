@@ -4,5 +4,8 @@
   "semi": false,
   "singleQuote": true,
   "bracketSpacing": false,
-  "arrowParens": "always"
+  "arrowParens": "always",
+  "editor.formatOnSave": true,
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 80
 }
