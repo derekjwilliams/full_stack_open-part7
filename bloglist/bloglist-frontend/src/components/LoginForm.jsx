@@ -1,3 +1,5 @@
+import {Button} from '@/components/ui/button'
+
 const LoginForm = ({
   username,
   password,
@@ -9,28 +11,28 @@ const LoginForm = ({
     <h1>Login</h1>
     <form onSubmit={handleSubmit}>
       <div>
-        <label htmlFor='Username'>user name</label>
+        <label htmlFor="Username">user name</label>
         <input
-          id='username'
-          type='text'
+          id="username"
+          type="text"
           value={username}
-          name='Username'
+          name="Username"
           onChange={handleUsernameChange}
         />
       </div>
       <div>
-        <label htmlFor='Password'>password</label>
+        <label htmlFor="Password">password</label>
         <input
-          id='password'
-          type='password'
+          id="password"
+          type="password"
           value={password}
-          name='Password'
+          name="Password"
           onChange={handlePasswordChange}
         />
       </div>
-      <button id='login-button' type='submit'>
+      <Button id="login-button" data-testid="logout-button" type="submit">
         login
-      </button>
+      </Button>
     </form>
   </div>
 )

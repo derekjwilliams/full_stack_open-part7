@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import {useState, useEffect, useRef} from 'react'
 import Blog from './components/Blog'
 import Notification from './components/Notification'
 import Togglable from './components/Toggleable'
@@ -6,6 +6,7 @@ import BlogForm from './components/BlogForm'
 import LoginForm from './components/LoginForm'
 import blogService from './services/blogs'
 import loginService from './services/login'
+import {Button} from './components/ui/button'
 
 const localStorageUserKey = 'loggedBlogappUser'
 const App = () => {
@@ -61,7 +62,7 @@ const App = () => {
   }
 
   const Blogs = () => (
-    <div className='blog-list'>
+    <div className="blog-list">
       <h2>blogs</h2>
       {blogs.map((blog) => (
         <Blog
@@ -81,7 +82,7 @@ const App = () => {
       setBlogs(blogs.concat(returnedBlog))
       setNotificationKind('success')
       setNotificationMessage(
-        `a new blog ${returnedBlog.title} by ${returnedBlog.author} added`
+        `a new blog ${returnedBlog.title} by ${returnedBlog.author} added`,
       )
       setTimeout(() => {
         setNotificationKind('')
@@ -127,7 +128,7 @@ const App = () => {
     }
   }
   const blogForm = () => (
-    <Togglable buttonLabel='add blog' ref={blogFormRef}>
+    <Togglable buttonLabel="" ref={blogFormRef}>
       <BlogForm createBlog={addBlog} />
     </Togglable>
   )
@@ -138,8 +139,8 @@ const App = () => {
         <LoginForm
           username={username}
           password={password}
-          handleUsernameChange={({ target }) => setUsername(target.value)}
-          handlePasswordChange={({ target }) => setPassword(target.value)}
+          handleUsernameChange={({target}) => setUsername(target.value)}
+          handlePasswordChange={({target}) => setPassword(target.value)}
           handleSubmit={handleLogin}
         />
       )}
@@ -147,7 +148,7 @@ const App = () => {
         <div>
           <p>
             {user.name} logged in{' '}
-            <button data-testid='logout-button' onClick={handleLogout}>logout</button>
+            <Button variant="secondary" data-testid="logout-button" onClick={handleLogout}>logout</Button>
           </p>
           {blogForm()}
           {Blogs()}
