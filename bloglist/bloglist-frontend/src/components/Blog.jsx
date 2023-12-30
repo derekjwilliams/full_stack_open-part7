@@ -32,9 +32,9 @@ const Blog = ({blog, user, incrementLikes, deleteBlog}) => {
             <CardTitle style={itemStyle} className="blog-title">
               {blog.title}
             </CardTitle>
-            <CardTitle style={itemStyle} className="blog-author">
+            <CardDescription style={itemStyle} className="blog-author">
               {blog.author}
-            </CardTitle>
+            </CardDescription>
             <Button
               variant="secondary"
               className="hide-blog-details"
