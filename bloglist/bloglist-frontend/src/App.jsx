@@ -1,3 +1,4 @@
+import {useQuery, useMutation, useQueryClient} from '@tanstack/react-query'
 import {useState, useEffect, useRef} from 'react'
 import Blog from './components/Blog'
 import Notification from './components/Notification'
@@ -7,33 +8,49 @@ import LoginForm from './components/LoginForm'
 import blogService from './services/blogs'
 import loginService from './services/login'
 import {Button} from './components/ui/button'
+import {getBlogs, updateBlog, login, setToken} from './requests'
 
 const localStorageUserKey = 'loggedBlogappUser'
 const App = () => {
-  const [blogs, setBlogs] = useState([])
+  // const [blogs, setBlogs] = useState([])
   const [user, setUser] = useState(null)
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
   const [notificationMessage, setNotificationMessage] = useState(null)
   const [notificationKind, setNotificationKind] = useState('notification')
 
-  const notficationDuration = 5000 //milliseconds
+  const notificationDuration = 5000 //milliseconds
   const blogFormRef = useRef()
 
-  useEffect(() => {
-    const loggedUserJSON = window.localStorage.getItem(localStorageUserKey)
-    if (loggedUserJSON) {
-      const user = JSON.parse(loggedUserJSON)
-      setUser(user)
-      blogService.setToken(user.token)
-    }
-  }, [])
+  // useEffect(() => {
+  //   const loggedUserJSON = window.localStorage.getItem(localStorageUserKey)
+  //   if (loggedUserJSON) {
+  //     const user = JSON.parse(loggedUserJSON)
+  //     setUser(user)
+  //     blogService.setToken(user.token)
+  //   }
+  // }, [])
 
-  useEffect(() => {
-    blogService.getAll().then((blogs) => {
-      setBlogs(blogs.sort((a, b) => b.likes - a.likes))
-    })
-  }, [])
+  const result = useQuery({
+    queryKey: ['blogs'],
+    queryFn: getBlogs,
+    retry: false,
+  })
+
+  if (result.isLoading) {
+    return <div>loading data...</div>
+  }
+
+  if (result.isError) {
+    return <div>anecdote service not available due to problems in server</div>
+  }
+  const blogs = result.data
+
+  // useEffect(() => {
+  //   blogService.getAll().then((blogs) => {
+  //     setBlogs(blogs.sort((a, b) => b.likes - a.likes))
+  //   })
+  // }, [])
 
   const incrementLikes = (blog) => {
     blog.likes = blog.likes + 1
@@ -87,7 +104,7 @@ const App = () => {
       setTimeout(() => {
         setNotificationKind('')
         setNotificationMessage(null)
-      }, notficationDuration)
+      }, notificationDuration)
     })
   }
 
@@ -101,13 +118,26 @@ const App = () => {
     event.preventDefault()
 
     try {
+      // const result = login({
+      //   username,
+      //   password,
+      // })
       const user = await loginService.login({
         username,
         password,
       })
+      if (result.isLoading) {
+        return <div>loading data...</div>
+      }
 
+      if (result.isError) {
+        return <div>blog service not available due to problems in server</div>
+      }
+      // const user = result.data
+      console.log('user: ', user)
       window.localStorage.setItem(localStorageUserKey, JSON.stringify(user))
-
+      // debugger
+      setToken(user.token)
       blogService.setToken(user.token)
       setUser(user)
       setUsername('')
@@ -117,14 +147,14 @@ const App = () => {
       setTimeout(() => {
         setNotificationKind('')
         setNotificationMessage(null)
-      }, notficationDuration)
+      }, notificationDuration)
     } catch (exception) {
       setNotificationKind('error')
       setNotificationMessage('Wrong username or password')
       setTimeout(() => {
         setNotificationKind('')
         setNotificationMessage(null)
-      }, notficationDuration)
+      }, notificationDuration)
     }
   }
   const blogForm = () => (
@@ -148,7 +178,13 @@ const App = () => {
         <div>
           <p>
             {user.name} logged in{' '}
-            <Button variant="secondary" data-testid="logout-button" onClick={handleLogout}>logout</Button>
+            <Button
+              variant="secondary"
+              data-testid="logout-button"
+              onClick={handleLogout}
+            >
+              logout
+            </Button>
           </p>
           {blogForm()}
           {Blogs()}
