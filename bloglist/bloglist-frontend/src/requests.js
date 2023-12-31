@@ -15,7 +15,21 @@ export const getBlogs = () => {
 }
 
 export const createBlog = (blog) => {
-  return axios.post(baseUrl, blog).then((res) => res.data)
+  const loggedUserJSON = window.localStorage.getItem('loggedBlogappUser')
+  const user = JSON.parse(loggedUserJSON)
+  // blogService.setToken(user.token)
+
+  const config = {
+    headers: {Authorization: 'Bearer ' + user.token},
+  }
+
+  console.log('createBlog')
+  console.log('createBlog, config: ', config)
+
+  // const response = await axios.post(baseUrl, newBlog, config)
+  // return response.data
+
+  return axios.post(baseUrl, blog, config).then((res) => res.data)
 }
 
 export const updateBlog = (blog) => {
