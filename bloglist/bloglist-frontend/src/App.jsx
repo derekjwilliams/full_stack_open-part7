@@ -22,14 +22,14 @@ const App = () => {
   const notificationDuration = 5000 //milliseconds
   const blogFormRef = useRef()
 
-  // useEffect(() => {
-  //   const loggedUserJSON = window.localStorage.getItem(localStorageUserKey)
-  //   if (loggedUserJSON) {
-  //     const user = JSON.parse(loggedUserJSON)
-  //     setUser(user)
-  //     blogService.setToken(user.token)
-  //   }
-  // }, [])
+  useEffect(() => {
+    const loggedUserJSON = window.localStorage.getItem(localStorageUserKey)
+    if (loggedUserJSON) {
+      const user = JSON.parse(loggedUserJSON)
+      setUser(user)
+      blogService.setToken(user.token)
+    }
+  }, [])
 
   const result = useQuery({
     queryKey: ['blogs'],
@@ -83,15 +83,17 @@ const App = () => {
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         Posts
       </h1>
-      {blogs.map((blog) => (
-        <Blog
-          key={blog.id}
-          blog={blog}
-          user={user}
-          incrementLikes={incrementLikes}
-          deleteBlog={deleteBlog}
-        />
-      ))}
+      <div className="flex flex-col gap-8 - m-8">
+        {blogs.map((blog) => (
+          <Blog
+            key={blog.id}
+            blog={blog}
+            user={user}
+            incrementLikes={incrementLikes}
+            deleteBlog={deleteBlog}
+          />
+        ))}
+      </div>
     </div>
   )
 
@@ -177,7 +179,7 @@ const App = () => {
         />
       )}
       {user && (
-        <div>
+        <div className="bg-background text-foreground">
           <p>
             {user.name} logged in{' '}
             <Button
@@ -186,6 +188,19 @@ const App = () => {
               onClick={handleLogout}
             >
               logout
+            </Button>
+            <Button
+              onClick={() => {
+                if (document.body.classList.contains('light')) {
+                  document.body.classList.remove('light')
+                  document.body.classList.add('dark')
+                } else {
+                  document.body.classList.remove('dark')
+                  document.body.classList.add('light')
+                }
+              }}
+            >
+              theme
             </Button>
           </p>
           {blogForm()}

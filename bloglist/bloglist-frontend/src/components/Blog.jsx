@@ -2,7 +2,6 @@ import {useState} from 'react'
 import {Button} from '@/components/ui/button'
 import {
   Card,
-  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
@@ -24,29 +23,26 @@ const Blog = ({blog, user, incrementLikes, deleteBlog}) => {
   }
 
   return (
-    <Card className="blog-item">
+    <Card className="blog-item shadow-lg">
       {/* <div className="blog-item" style={blogStyle}> */}
       {showDetails && (
         <>
-          <CardTitle style={itemStyle} className="blog-title">
-            {blog.title}
-          </CardTitle>
-          <div className="ml-4">
-            <CardDescription style={itemStyle} className="blog-author text-lg">
-              by {blog.author}
-            </CardDescription>
-            <Button
-              variant="secondary"
-              className="hide-blog-details justify-end max-w-32"
-              data-testid="hide-blog-details"
-              onClick={() => setShowDetails(false)}
-            >
-              collapse
-            </Button>
-            <CardDescription style={itemStyle} className="blog-url">
-              <a href={blog.url}>{blog.url}</a>
-            </CardDescription>
-          </div>
+          <CardHeader>
+            <CardTitle style={itemStyle} className="blog-title">
+              {blog.title}
+            </CardTitle>
+            <div className="ml-4">
+              <CardDescription
+                style={itemStyle}
+                className="blog-author text-lg"
+              >
+                by {blog.author}
+              </CardDescription>
+              <CardDescription style={itemStyle} className="blog-url">
+                <a href={blog.url}>{blog.url}</a>
+              </CardDescription>
+            </div>
+          </CardHeader>
 
           <CardFooter>
             <label style={itemStyle} htmlFor="blog-likes">
@@ -57,21 +53,27 @@ const Blog = ({blog, user, incrementLikes, deleteBlog}) => {
             </span>
             <Button
               variant="secondary"
-              className="increment-blog-like"
+              className="increment-blog-like m-4"
               data-testid="increment-blog-like"
               onClick={() => incrementLikes(blog)}
             >
               like
             </Button>
-          </CardFooter>
-          <CardFooter>
+            <Button
+              variant="secondary"
+              className="hide-blog-details justify-end m-4"
+              data-testid="hide-blog-details"
+              onClick={() => setShowDetails(false)}
+            >
+              collapse
+            </Button>
             {blog &&
               blog.user &&
               user &&
               user.username === blog.user.username && (
                 <Button
                   variant="secondary"
-                  className="delete-blog"
+                  className="delete-blog m-4"
                   data-testid="delete-blog"
                   onClick={() => deleteBlog(blog)}
                 >
