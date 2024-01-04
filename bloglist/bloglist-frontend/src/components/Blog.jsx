@@ -28,25 +28,26 @@ const Blog = ({blog, user, incrementLikes, deleteBlog}) => {
       {/* <div className="blog-item" style={blogStyle}> */}
       {showDetails && (
         <>
-          <div>
-            <CardTitle style={itemStyle} className="blog-title">
-              {blog.title}
-            </CardTitle>
-            <CardDescription style={itemStyle} className="blog-author">
-              {blog.author}
+          <CardTitle style={itemStyle} className="blog-title">
+            {blog.title}
+          </CardTitle>
+          <div className="ml-4">
+            <CardDescription style={itemStyle} className="blog-author text-lg">
+              by {blog.author}
             </CardDescription>
             <Button
               variant="secondary"
-              className="hide-blog-details"
+              className="hide-blog-details justify-end max-w-32"
               data-testid="hide-blog-details"
               onClick={() => setShowDetails(false)}
             >
-              hide
+              collapse
             </Button>
+            <CardDescription style={itemStyle} className="blog-url">
+              <a href={blog.url}>{blog.url}</a>
+            </CardDescription>
           </div>
-          <CardDescription style={itemStyle} className="blog-url">
-            <a href={blog.url}>{blog.url}</a>
-          </CardDescription>
+
           <CardFooter>
             <label style={itemStyle} htmlFor="blog-likes">
               likes:
@@ -146,11 +147,11 @@ const Blog = ({blog, user, incrementLikes, deleteBlog}) => {
             <CardDescription>{blog.author}</CardDescription>
             <Button
               variant="secondary"
-              className="blog-show-details"
+              className="blog-show-details max-w-32"
               data-testid="blog-show-details"
               onClick={() => setShowDetails(true)}
             >
-              show
+              details
             </Button>
           </CardHeader>
         </>

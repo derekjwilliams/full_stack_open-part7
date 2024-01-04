@@ -80,7 +80,9 @@ const App = () => {
 
   const Blogs = () => (
     <div className="blog-list">
-      <h2>blogs</h2>
+      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        Posts
+      </h1>
       {blogs.map((blog) => (
         <Blog
           key={blog.id}
