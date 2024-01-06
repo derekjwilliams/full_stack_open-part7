@@ -42,7 +42,7 @@ const App = () => {
   }
 
   if (result.isError) {
-    return <div>anecdote service not available due to problems in server</div>
+    return <div>blog service not available due to problems in server</div>
   }
   const blogs = result.data
 
